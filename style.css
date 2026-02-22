@@ -636,15 +636,6 @@ button:hover {
     .book-card {
         width: 92%;
     }
-
-    /* Fix mobile 100vh jump (address bar) */
-.hero {
-  min-height: 100svh;   /* stable viewport height on mobile */
-  height: 100dvh;       /* dynamic viewport height (modern browsers) */
-  height: 100vh;        /* fallback */
-  padding-top: 9rem;    /* space for fixed header */
-  box-sizing: border-box;
-}
 }
 
 @media only screen and (max-width: 500px) {
@@ -672,12 +663,4 @@ button:hover {
     input, select, .textarea {
         width: 90%;
     }
-    /* Fix mobile 100vh jump (address bar) */
-.hero {
-  min-height: 100svh;   /* stable viewport height on mobile */
-  height: 100dvh;       /* dynamic viewport height (modern browsers) */
-  height: 100vh;        /* fallback */
-  padding-top: 9rem;    /* space for fixed header */
-  box-sizing: border-box;
-}
 }
