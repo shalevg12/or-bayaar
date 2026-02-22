@@ -27,8 +27,8 @@
 
     --transition: all .2s ease-in-out;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
 /* global styles */
@@ -48,8 +48,10 @@ html {
 body {
     font-family: var(--ff-primary);
     overflow-x: hidden;
-    direction: rtl;        /* RTL global */
-    text-align: right;     /* natural Hebrew alignment */
+    direction: rtl;
+    /* RTL global */
+    text-align: right;
+    /* natural Hebrew alignment */
 }
 
 a {
@@ -78,7 +80,7 @@ a {
     left: 0;
     height: 9rem;
     z-index: 1000;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .logo {
@@ -95,7 +97,8 @@ a {
     font-size: var(--sm);
     color: var(--clr-white);
     display: flex;
-    margin-left: 8rem; /* RTL: was margin-right */
+    margin-left: 8rem;
+    /* RTL: was margin-right */
     z-index: 50;
     transition: var(--transition);
 }
@@ -141,8 +144,10 @@ a {
     border-radius: 50%;
     position: fixed;
     top: var(--sm);
-    left: var(--sm);   /* moved to left */
-    right: auto;       /* disable right */
+    left: var(--sm);
+    /* moved to left */
+    right: auto;
+    /* disable right */
     z-index: 3000;
     box-shadow: var(--bs);
     text-align: center;
@@ -202,7 +207,8 @@ a {
     list-style: none;
     position: fixed;
     top: 0;
-    left: 0;              /* left drawer */
+    left: 0;
+    /* left drawer */
     right: auto;
     width: 50%;
     height: 100vh;
@@ -214,7 +220,8 @@ a {
     z-index: 2000;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    text-align: right;    /* Hebrew inside menu */
+    text-align: right;
+    /* Hebrew inside menu */
 }
 
 .open .nav-list {
@@ -228,9 +235,11 @@ a {
 .nav-link {
     display: block;
     color: var(--clr-white);
-    text-transform: none;   /* remove uppercase for Hebrew */
+    text-transform: none;
+    /* remove uppercase for Hebrew */
     font-size: 1.7rem;
-    letter-spacing: 0;      /* letter spacing looks bad in Hebrew */
+    letter-spacing: 0;
+    /* letter spacing looks bad in Hebrew */
     transition: color 0.5s;
     padding: 0.6rem 0;
 }
@@ -244,28 +253,31 @@ a {
 }
 
 .icon:not(:last-child) {
-    margin-left: var(--xs);  /* RTL: spacing to the left */
+    margin-left: var(--xs);
+    /* RTL: spacing to the left */
 }
 
 /* hero */
 .hero {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
         url("img/BG_Vertical.jpg") center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* keep hero centered */
+    text-align: center;
+    /* keep hero centered */
 }
 
 .title {
     font-size: 7rem;
     font-family: var(--ff-secondary);
     color: var(--clr-white);
-    letter-spacing: 0;  /* Hebrew better without tracking */
+    letter-spacing: 0;
+    /* Hebrew better without tracking */
 }
 
 .go-top {
@@ -274,7 +286,8 @@ a {
     height: 50px;
     background: var(--clr-white);
     bottom: var(--sm);
-    left: var(--sm);  /* RTL: move button to left */
+    left: var(--sm);
+    /* RTL: move button to left */
     right: auto;
     display: flex;
     align-items: center;
@@ -423,8 +436,10 @@ a {
 /* menu */
 /* FIX: remove fixed heights so it won't overlap reservation */
 .menu {
-    height: auto;                 /* was 100vh */
-    padding-bottom: 26rem;        /* space for the card overlap */
+    height: auto;
+    /* was 100vh */
+    padding-bottom: 26rem;
+    /* space for the card overlap */
 }
 
 .menu-header {
@@ -437,7 +452,8 @@ a {
 .menu-card {
     background-color: var(--clr-white);
     width: 80%;
-    margin: -30rem auto 0;        /* keep overlap but stop pushing into next section */
+    margin: -30rem auto 0;
+    /* keep overlap but stop pushing into next section */
     box-shadow: var(--bs);
     border-radius: 10px;
     padding-bottom: var(--xl);
@@ -494,9 +510,10 @@ a {
 
 /* reservation */
 .book {
-    min-height: 80vh; /* was fixed height */
+    min-height: 80vh;
+    /* was fixed height */
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
         url("img/vegetable-salad.jpg") no-repeat center;
     background-size: cover;
     position: relative;
@@ -636,6 +653,10 @@ button:hover {
     .book-card {
         width: 92%;
     }
+
+    .logo {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -660,7 +681,13 @@ button:hover {
         font-size: var(--xs);
     }
 
-    input, select, .textarea {
+    input,
+    select,
+    .textarea {
         width: 90%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
     }
 }
