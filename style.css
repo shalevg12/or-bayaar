@@ -607,6 +607,10 @@ button:hover {
         max-width: 500px;
     }
 
+    .title {
+        font-size: 3.2rem;
+    }
+
     .tart {
         max-height: 500px;
         object-fit: contain;
