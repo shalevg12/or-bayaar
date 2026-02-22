@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <script src="https://kit.fontawesome.com/b699c21610.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>אור ביער</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="nav">
+                <a href="index.html" class="logo">Or Ba'Yaar</a>
+
+                <div class="nav__button" aria-label="תפריט">
+                    <span class="nav__icon"></span>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">דף הבית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">עלינו</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">תפריט</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservation" class="nav-link">הזמנת אירוע</a>
+                    </li>
+                </ul>
+
+                <ul class="icons">
+                    <li class="icon"><i class="fas fa-search"></i></li>
+                    <li class="icon"><i class="fab fa-twitter"></i></li>
+                    <li class="icon"><i class="fab fa-facebook-f"></i></li>
+                    <li class="icon"><i class="fab fa-instagram"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero" id="home">
+            <div class="container">
+                <div class="premium-container">
+                    <img class="premium" src="img/primeLogo.png" alt="Premium" />
+                </div>
+
+                <div class="restaurant-title">
+                    <h1 class="title">
+                        כשאוכל וטבע <br />
+                        נפגשים במקום אחד
+                    </h1>
+                </div>
+            </div>
+
+            <a class="go-top" href="#"><i class="fas fa-arrow-up"></i></a>
+        </div>
+
+        <section class="offers">
+            <div class="container">
+                <h2 class="section-title">מה מחכה לכם אצלנו</h2>
+                <h3 class="section-subtitle">עם אהבה לטבע ולאנשים</h3>
+
+                <div class="three-columns-grid">
+                    <div class="grid-item" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="img/pizza1.png" class="offers-img" alt="" width="200" />
+                        <h3 class="subtitle">
+                            <strong>אוכל</strong> טוב
+                        </h3>
+                        <p class="paragraph">
+                            פיצות חמות מהטאבון, מאפים טריים ונשנושים מפנקים
+                            שמוכנים במקום באהבה.<br />
+                            מושלם לפתוח שולחן מול הנוף וליהנות מביס איכותי
+                            באוויר הפתוח.
+                        </p>
+                    </div>
+
+                    <div class="grid-item" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="img/coffee1.png" class="offers-img" alt="" width="200" />
+                        <h3 class="subtitle">
+                            <strong>קפה</strong> איכותי
+                        </h3>
+                        <p class="paragraph">
+                            קפה משובח שנטחן במקום, אספרסו מדויק, קפוצ'ינו
+                            עשיר ומשקאות חמים וקרים שפותחים את הלב. כי אין
+                            כמו כוס קפה טובה בלב הטבע.
+                        </p>
+                    </div>
+
+                    <div class="grid-item" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="img/deserts1.png" class="offers-img" alt="" width="200" />
+                        <h3 class="subtitle">
+                            <strong>קינוחים</strong> מעולים
+                        </h3>
+                        <p class="paragraph">
+                            עוגות ביתיות, עוגיות מפנקות ומתוקים שמשלימים כל
+                            רגע של שלווה.<br />
+                            מושלם לצד הקפה או כעצירה מתוקה באמצע טיול.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container-fluid">
+                <div class="two-columns-grid">
+                    <div class="top-tart" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="img/nature1.jpg" alt="nature" class="tart" />
+                    </div>
+
+                    <div class="about-us" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+                        <h2 class="section-title welcome">
+                            בלב הטבע, רגע לעצור
+                        </h2>
+                        <p class="about-paragraph">
+                            בין עצים פתוחים לשמיים כחולים, מחכה לכם פינה שקטה
+                            של קפה, רוגע ונוף פתוח. מקום לעצור בו את היום,
+                            לנשום עמוק וליהנות מרגע פשוט ואמיתי — עם כוס קפה
+                            ביד ושקט מסביב.
+                        </p>
+                        <a href="#menu" class="btn">לתפריט שלנו</a>
+                    </div>
+                </div>
+
+                <div class="two-columns-grid third-grid">
+                    <div class="read-more" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+                        <h2 class="section-title welcome">
+                            מאפים וקינוחים שנאפים באהבה
+                        </h2>
+                        <p class="about-paragraph">
+                            קרואסונים חמאתיים, שבלולי קינמון רכים, עוגות
+                            ביתיות ומתוקים שמפזרים ריח של אפייה טרייה באוויר.
+                            כל ביס משלים את חוויית הטבע והופך את הביקור למתוק
+                            במיוחד.
+                        </p>
+                        <a href="#menu" class="btn">הקינוחים שלנו</a>
+                    </div>
+
+                    <div class="top-fruits" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="img/deserts2.jpg" alt="desserts" class="fruits" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="menu-header"></div>
+
+            <div class="menu-card" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                <div class="menu-card-header">
+                    <img class="fruit" src="img/fruit.png" alt="Fruit" />
+                    <h2 class="section-title menu-title">התפריט שלנו</h2>
+                    <h3 class="section-subtitle">טרי • חם • נעשה באהבה</h3>
+                </div>
+
+                <div class="two-columns-grid">
+                    <div class="starters">
+                        <h2>🍕 הפיצות של היער</h2>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>“הירוקה של היער”</h3>
+                                <h4 class="price">50 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                פיצה פסטו עם מוצרלה ופרמזן.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>“נפוליטנה קלאסיקה”</h3>
+                                <h4 class="price">40 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                רוטב עגבניות ומוצרלה. <br />
+                                תוספות לבחירה: תירס | זיתים | בצל | עגבנייה |
+                                פטריות טריות (כל תוספת 3 ₪).
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>“ארטישוק רומאי”</h3>
+                                <h4 class="price">52 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                רוטב עגבניות, מוצרלה וארטישוק אל רומנו.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>“מיקס פטריות”</h3>
+                                <h4 class="price">48 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                רוטב עגבניות, מוצרלה ופטריות.
+                            </p>
+                        </div>
+
+                        <h2 style="margin-top: 28px">🥗 סלטים מהשביל</h2>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>כרובית זהב</h3>
+                                <h4 class="price">50 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                כרובית, חמוציות, שקדים, ירק טרי, גבינה
+                                בולגרית, לימון ושמן זית.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>שרי ובוראטה</h3>
+                                <h4 class="price">53 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                עגבניות שרי צבעוניות, בוראטה קרמית, בזיליקום
+                                ושמן זית.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>שדה פתוח</h3>
+                                <h4 class="price">45 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                ירקות עונתיים קצוצים, גבינה בולגרית, עשבי
+                                תיבול וויניגרט לימון.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mains">
+                        <h2>🍰 מתוק וטעים</h2>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>שוויצריה הקטנה</h3>
+                                <h4 class="price">35 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                קינוח מפנק ליד הקפה.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קסטה טראפל שוקולד</h3>
+                                <h4 class="price">35 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                מתוק, עשיר, ומושלם לשיתוף.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>מלבי</h3>
+                                <h4 class="price">10 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">קליל ומרענן.</p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קרם ברולה</h3>
+                                <h4 class="price">15 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                קרמי עם קראסט עדין מלמעלה.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קפה ומאפה</h3>
+                                <h4 class="price">22 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                קומבו מושלם לעצירה באמצע היום.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קינוח משתנה (שאל את המוכר)</h3>
+                                <h4 class="price">35 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                הפתעה מתוקה לפי מה שיצא טרי היום.
+                            </p>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>מאפים</h3>
+                                <h4 class="price">14 ₪</h4>
+                            </div>
+                            <p class="menu-paragraph">
+                                סינבון | קרואסון חמאה | קרואסון שקדים |
+                                קרואסון שוקולד
+                            </p>
+                        </div>
+
+                        <h2 style="margin-top: 28px">☕ משהו לשתות</h2>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>אספרסו</h3>
+                                <h4 class="price">10 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>אספרסו כפול</h3>
+                                <h4 class="price">12 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קפה שחור</h3>
+                                <h4 class="price">10 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קפוצ׳ינו</h3>
+                                <h4 class="price">12 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>נס קפה</h3>
+                                <h4 class="price">12 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>אמריקנו</h3>
+                                <h4 class="price">12 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>קפה קר</h3>
+                                <h4 class="price">14 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>אייס קפה</h3>
+                                <h4 class="price">14 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>סחוטים (תפוז / גזר / תפוח)</h3>
+                                <h4 class="price">15 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>מים</h3>
+                                <h4 class="price">8 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>סודה</h3>
+                                <h4 class="price">8 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>פחית שתייה קלה</h3>
+                                <h4 class="price">10 ₪</h4>
+                            </div>
+                        </div>
+
+                        <div class="starter">
+                            <div class="starter-header">
+                                <h3>שתייה קלה (בקבוק)</h3>
+                                <h4 class="price">12 ₪</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="book" id="reservation" dir="rtl">
+            <div class="container-fluid">
+                <form id="eventForm" class="event-form">
+                    <div class="book-card">
+                        <h2 class="section-title book-title">יש לכם אירוע? דברו איתנו בוואטסאפ</h2>
+                        <h3 class="section-subtitle">
+                            מלאו כמה פרטים ולחצו על “שלחו בוואטסאפ” — ההודעה תיפתח מוכנה לשליחה.
+                        </h3>
+
+                        <div class="two-columns-grid">
+                            <div class="form-group">
+                                <input type="text" name="fullName" class="input" placeholder="שם מלא*" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="input" placeholder="טלפון*" required />
+                            </div>
+                        </div>
+
+                        <div class="two-columns-grid">
+                            <div class="form-group">
+                                <input type="email" name="email" class="input" placeholder="אימייל (לא חובה)" />
+                            </div>
+                            <div class="form-group">
+                                <select name="eventType" class="input" required>
+                                    <option value="" disabled selected>סוג האירוע*</option>
+                                    <option value="יום הולדת">יום הולדת</option>
+                                    <option value="אירוע משפחתי">אירוע משפחתי</option>
+                                    <option value="אירוע חברה">אירוע חברה</option>
+                                    <option value="הצעה / חגיגה">הצעה / חגיגה</option>
+                                    <option value="אחר">אחר</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="three-columns-grid">
+                            <div class="form-group">
+                                <input type="date" name="eventDate" class="input" required />
+                            </div>
+
+                            <div class="form-group">
+                                <select name="eventTime" class="input" required>
+                                    <option value="" disabled selected>שעה*</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="09:30">09:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <select name="guests" class="input" required>
+                                    <option value="" disabled selected>כמות אורחים*</option>
+                                    <option value="10–20">10–20</option>
+                                    <option value="20–30">20–30</option>
+                                    <option value="30–50">30–50</option>
+                                    <option value="50+">50+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" class="input textarea" rows="4"
+                                placeholder="ספרו לנו בקצרה מה אתם מחפשים (כיבוד, מוזיקה, שעות, בקשות מיוחדות...)"></textarea>
+                        </div>
+
+                        <div class="btn-book">
+                            <button type="button" id="whatsappBtn">שלחו בוואטסאפ</button>
+                        </div>
+
+                        <p class="form-note">
+                            לחיצה על הכפתור תפתח את WhatsApp עם הודעה מוכנה לשליחה.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">
+            © כל הזכויות שמורות • אור ביער
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
